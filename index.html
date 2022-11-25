@@ -12,14 +12,15 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="text-center">
-    <div class="container text-center my-5 p-5 shadow-lg bg-body rounded-4">
+  <body class="container text-center" style="width: fit-content">
+    <div class="container text-center mt-5 p-5 shadow-lg bg-body rounded-4">
       <h2>Fruits Calculator</h2>
       <form>
         <p>
           <label>Enter the number of fruits you want to put in basket </label
           ><br />
           <input
+            style="width: 300px"
             id="fruits"
             type="number"
             placeholder="Enter the number of fruits you want to put in basket"
@@ -28,13 +29,18 @@
         <p>
           <label>Enter the number of days you want</label><br />
           <input
+            style="width: 300px"
             id="days"
             type="number"
             placeholder="Enter the number of days you want"
           />
         </p>
       </form>
-      <button class="btn btn-primary px-5" onclick="showFruits()">
+      <button
+        class="btn btn-primary"
+        style="width: 250px"
+        onclick="showFruits()"
+      >
         Calculate
       </button>
     </div>
